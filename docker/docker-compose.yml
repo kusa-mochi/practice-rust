@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  rust_dev:
+    image: whoatemyapplepie/rust:alpine3.19
+    build:
+      context: practice-rust-builder
+    volumes:
+      - ../src:/src
+    tty: true
