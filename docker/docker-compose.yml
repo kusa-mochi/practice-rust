@@ -7,3 +7,5 @@ services:
     volumes:
       - ../src:/src
     tty: true
+    working_dir: /home/mochirust
+    command: ["/bin/sh"]
